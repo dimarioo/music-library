@@ -4,7 +4,10 @@ import Searchbar from './Components/Searchbar'
 import Gallery from "./Components/Gallery";
 import AlbumView from "./Components/AlbumView";
 import ArtistView from "./Components/ArtistView";
+import { SearchContext } from "./Context/SearchContext";
 import { DataContext } from "./Context/DataContext";
+import { createResource as fetchData } from './helper'
+
 function App() {
 
   const [search, setSearch] = useState('')
